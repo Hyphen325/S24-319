@@ -50,6 +50,7 @@ int main(void){ // main1R
   PLL_Init();     // set system clock to 80 MHz
   LaunchPad_Init();
   ST7735_InitPrintf();
+  ST7735_FillScreen(ST7735_BLACK);
   while(1){
     count=0;
     for(int i=0; i<10; i++){
@@ -193,9 +194,12 @@ void TIMG12_IRQHandler(void){uint32_t pos;
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
     // increment TransmitCount
     // sample 12-bit ADC0 channel 5, slidepot
+    TransmitCount++;
+    Data = Sensor.In();
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
     // convert to fixed point distance
     // output 4-frame message
+
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
   }
 }
@@ -214,6 +218,7 @@ int main5T(void){ // main5T
   Sensor.Init(); // PB18 = ADC1 channel 5, slidepot
   IRxmt_Init();  // just transmit, PA8, blind synchronization
       // initialize interrupts on TimerG12 at 30 Hz
+  TimerG12_IntArm(2666666, 1);
   __enable_irq();
   while(1){
 	  // nothing to do here
@@ -233,10 +238,19 @@ int main5R(void){ // main5R
     // move cursor to top left
     // wait for first frame
     // incremenet ReceiveCount
+    ST7735_SetCursor(0, 0);
+    char InChar = 0;
+    while (InChar == 0) { InChar = UART2_InChar(); }
+    ReceiveCount++;
     GPIOB->DOUTTGL31_0 = RED; // toggle PB26 (minimally intrusive debugging)
     // receive next three bytes of message
     // output message
     // calculate Position from the message
+    char byte1 = UART2_InChar();
+    char byte2 = UART2_InChar();
+    char byte3 = UART2_InChar();
+    char message[] = {InChar, byte1, byte2, byte3};
+    printf("%.4s", message);
     if((ReceiveCount%15)==0){
       ST7735_PlotPoint(Position);
       ST7735_PlotNextErase(); // data plotted at about 2 Hz

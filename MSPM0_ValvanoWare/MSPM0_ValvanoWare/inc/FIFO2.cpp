@@ -11,38 +11,72 @@
 
 
 #include <stdint.h>
+#include <stdio.h>
+
+
 
 #include "../inc/FIFO2.h"
 #include "../inc/ST7735.h"
 
-
+#define FIFO2_SIZE 32
 // A class named Queue that defines a FIFO
+int abs(int x) {
+    if (x < 0) {
+        return -1 * x;
+    }
+    return x;
+}
+
 Queue::Queue(){
   // Constructor - set PutI and GetI as 0. 
   // We are assuming that for an empty Queue, both PutI and GetI will be equal
-
-// add code here to initialize on creation
+        PutI = 0;
+        GetI = 0;       
+        // add code here to initialize on creation
 }
+
 
 // To check whether Queue is empty or not
 bool Queue::IsEmpty(void){
+    if ((GetI-PutI) == 0) {
+        return true;
+    }
   return false;  // replace this with solution
 }
 
   // To check whether Queue is full or not
 bool Queue::IsFull(void){
+    if (abs(GetI-PutI) == FIFO2_SIZE) {
+        return true;
+    }
   return false;  // replace this with solution
 }
 
   // Inserts an element in queue at rear end
 bool Queue::Put(char x){
-  return false;  // replace this with solution
+    if (IsFull()) {
+        return false;
+    }
+    if (PutI == FIFO2_SIZE) {
+        PutI = 0;
+    }
+    else {
+        PutI++;
+    }
+    Buf[PutI] = x;
+    
+  return true;  // replace this with solution
 
 }
 
   // Removes an element in Queue from front end. 
 bool Queue::Get(char *pt){
-  return false;  // replace this with solution
+    if (IsEmpty()) {
+        return false;
+    }
+    *pt = Buf[GetI];
+    GetI = (GetI + 1) & FIFO2_SIZE;
+  return true;  // replace this with solution
 
 }
 
@@ -54,6 +88,8 @@ bool Queue::Get(char *pt){
 void Queue::Print(void){
     // Finding number of elements in queue  
   // output to ST7735R
+    for (int i = 0; i < FIFO2_SIZE; i++) {
+        printf("%d", Buf[i]);
+    }
 }
-
 
