@@ -49,10 +49,10 @@ void Delay(uint32_t time){
 void IRxmt_SendBit(int bit){
   // write this
     for (int i = 0; i < PulsePerBit; i++) {
-        GPIOA->DOUT31_0 |= ~(bit << 8)&IR;
-        Delay(1040000);
+        GPIOA->DOUT31_0 |= (~(bit << 8)) & IR;
+        Delay(337);
         GPIOA->DOUT31_0 &= ~IR;
-        Delay(1040000);
+        Delay(337);
     }
     
 

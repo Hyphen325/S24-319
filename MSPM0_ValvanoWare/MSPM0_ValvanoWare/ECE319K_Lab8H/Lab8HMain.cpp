@@ -43,7 +43,7 @@ SlidePot Sensor(1618,215); // copy calibration from Lab 7
 // err should be 0
 Queue FIFO;
 int err,count;
-int main(void){ // main1R
+int main1R(void){ // main1R
   char data = 0; char out;
   bool result;
   __disable_irq();
@@ -102,7 +102,7 @@ int main1T(void){ // main1T
 //   verify wave is 38 kHz 
 //   verify there are 16 pulses when sending 0
 //   verify each bit time is 421.05us, both 0 and 1
-int main2T(void){ // main2T
+int main(void){ // main2T
   __disable_irq();
   PLL_Init();     // set system clock to 80 MHz
   LaunchPad_Init();
@@ -199,7 +199,7 @@ void TIMG12_IRQHandler(void){uint32_t pos;
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
     // convert to fixed point distance
     // output 4-frame message
-    uint32_t sample = SlidePot.distance(SlidePot.In());
+    uint32_t sample = Sensor.Convert(Sensor.In());
     IRxmt_OutChar((sample / 1000)+0x30);
     IRxmt_OutChar(((sample%1000) / 100) + 0x30);
     IRxmt_OutChar(((sample%100) / 10) + 0x30);

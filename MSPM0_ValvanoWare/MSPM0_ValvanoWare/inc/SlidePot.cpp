@@ -58,7 +58,7 @@ void SlidePot::Save(uint32_t n){
 uint32_t SlidePot::Convert(uint32_t n){
 	// write this
 	// convert ADC raw sample n to fixed-point distance, 0.001cm
-	distance = ((slope * n) >> 12) + offset
+	distance = ((slope * n) >> 12) + offset;
 	return distance; // replace this with solution
 }
 
