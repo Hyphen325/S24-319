@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ECE319K_Lab5",
+    "\\ECE319K_Lab6",
     "\\ECE319K_Lab7",
-    "\\ECE319K_Lab8H"
+    "\\ECE319K_Lab8H",
+    "\\inc"
   ],
-  "SelectedNode": "\\ECE319K_Lab8H\\Lab8HMain.cpp",
+  "SelectedNode": "\\inc\\SlidePot.h",
   "PreviewInSolutionExplorer": false
 }

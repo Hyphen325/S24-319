@@ -2140,6 +2140,10 @@
     (stroke (width 0) (type default))
     (uuid 6047372c-b683-49e2-8261-590d53b48c34)
   )
+  (wire (pts (xy 262.89 107.95) (xy 262.89 110.49))
+    (stroke (width 0) (type default))
+    (uuid 60c010d5-cddd-43aa-abbf-8f3c8536ccdf)
+  )
   (wire (pts (xy 144.78 66.04) (xy 144.78 62.23))
     (stroke (width 0) (type default))
     (uuid 60d4aad6-110d-4cf0-ba22-7b78cb7f967a)
@@ -4595,6 +4599,31 @@
       (project "ntg393"
         (path "/69b823fd-c065-40ff-9bb9-c5835555f3eb"
           (reference "R2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 262.89 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid cb5ecc74-596b-41e1-9340-7bcbbe87c838)
+    (property "Reference" "#PWR014" (at 262.89 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 262.89 115.57 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 262.89 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 262.89 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1a984b4b-0bd8-4055-b9ef-749697f73317))
+    (instances
+      (project "ntg393"
+        (path "/69b823fd-c065-40ff-9bb9-c5835555f3eb"
+          (reference "#PWR014") (unit 1)
         )
       )
     )
