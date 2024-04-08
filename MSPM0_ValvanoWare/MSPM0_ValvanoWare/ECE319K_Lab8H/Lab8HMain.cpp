@@ -102,7 +102,7 @@ int main1T(void){ // main1T
 //   verify wave is 38 kHz 
 //   verify there are 16 pulses when sending 0
 //   verify each bit time is 421.05us, both 0 and 1
-int main(void){ // main2T
+int main2T(void){ // main2T
   __disable_irq();
   PLL_Init();     // set system clock to 80 MHz
   LaunchPad_Init();
@@ -122,7 +122,7 @@ int main(void){ // main2T
 //   run main3R on receiver
 //   verify pulses on transmitter convert to UART protocol on sensor output, receiver PA22
 //   verify waveforms similar to Figure 8.9
-int main3T(void){ // main3T
+int main(void){ // main3T
   __disable_irq();
   PLL_Init();     // set system clock to 80 MHz
   LaunchPad_Init();

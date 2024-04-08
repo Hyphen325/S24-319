@@ -3352,3 +3352,11 @@ java.nio.channels.ClosedByInterruptException
 !ENTRY com.ti.ccstudio.debug 1 0 2024-04-08 16:34:45.877
 !MESSAGE DS_ERROR: CORTEX_M0P: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
 
+
+!ENTRY com.ti.ccstudio.debug 1 0 2024-04-08 17:44:38.475
+!MESSAGE DS_ERROR: CORTEX_M0P: JTAG Communication Error: (Error -1001 @ 0x0) Requested operation is not supported on this device. (Emulation package 12.6.0.00029) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2024-04-08 17:44:38.515
+!MESSAGE DS_ERROR: CORTEX_M0P: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+

@@ -30,14 +30,14 @@ void UART2_Init(void){
     UART2->CLKSEL = 0x08;
     UART2->CLKDIV = 0x00;
     UART2->CTL0 &= ~0x01;
-    UART2->CTL0 = 0x00020008;//enables FIFO and RX
+    UART2->CTL0 = 0x00000008;//enables FIFO and RX
 //    40000000/16 = 2,500,000; 2,500,000/2375 = 1,052.6315
     UART2->IBRD = 1052;
-    UART2->FBRD = 40;
+    UART2->FBRD = 40; //1052 + (40/64)
     UART2->LCRH = 0x00000030;
-    UART2->CTL0 |= 0x1;
     UART2->IFLS &= ~(7 << 8);
     UART2->IFLS |= (4 << 8);
+    UART2->CTL0 |= 0x1;
 
 }
 //------------UART2_InChar------------

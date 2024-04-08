@@ -14524,3 +14524,384 @@ Finished building target: "ECE319K_Lab8H.out"
 gmake[1]: 'ECE319K_Lab8H.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../IRxmt.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"IRxmt.d_raw" -MT"IRxmt.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"IRxmt.o" "../IRxmt.cpp"
+Finished building: "../IRxmt.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../UART2.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"UART2.d_raw" -MT"UART2.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"UART2.o" "../UART2.cpp"
+Finished building: "../UART2.cpp"
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../UART2.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"UART2.d_raw" -MT"UART2.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"UART2.o" "../UART2.cpp"
+subdir_rules.mk:23: recipe for target 'UART2.o' failed
+../UART2.cpp:69:12: error: no member named 'ICLR' in 'UART_Regs'
+    UART2->ICLR = 1;
+    ~~~~~  ^
+1 error generated.
+gmake: *** [UART2.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../UART2.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"UART2.d_raw" -MT"UART2.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"UART2.o" "../UART2.cpp"
+Finished building: "../UART2.cpp"
+ 
+Building file: "../Lab8HMain.cpp"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Lab8HMain.d_raw" -MT"Lab8HMain.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg"   -o"Lab8HMain.o" "../Lab8HMain.cpp"
+Finished building: "../Lab8HMain.cpp"
+ 
+Building target: "ECE319K_Lab8H.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab8H.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab8H/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab8H_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab8H.out" "./Clock.o" "./FIFO2.o" "./IRxmt.o" "./Lab8HMain.o" "./LaunchPad.o" "./SPI.o" "./ST7735.o" "./SlidePot.o" "./Timer.o" "./UART2.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+Finished building target: "ECE319K_Lab8H.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ECE319K_Lab8H ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'ECE319K_Lab8H.out' is up to date.
+
+**** Build Finished ****
