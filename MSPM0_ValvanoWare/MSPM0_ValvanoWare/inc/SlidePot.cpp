@@ -58,9 +58,10 @@ void SlidePot::Save(uint32_t n){
 uint32_t SlidePot::Convert(uint32_t n){
 	// write this
 	// convert ADC raw sample n to fixed-point distance, 0.001cm
-	data = In();
-	return 42; // replace this with solution
+	distance = ((slope * n) >> 12) + offset
+	return distance; // replace this with solution
 }
+
 // do not use this function
 // it is added just to show you how SLOW floating point in on a Cortex M0+
 float SlidePot::FloatConvert(uint32_t input){
@@ -76,6 +77,6 @@ void SlidePot::Sync(void){
 
 uint32_t SlidePot::Distance(void){  // return distance value (0 to 2000), 0.001cm
   // write this
-  return 42; // replace this with solution
+  return distance; // replace this with solution
 }
 

@@ -31,7 +31,7 @@ uint32_t ReceiveCount,TransmitCount;
 uint32_t Position; // fixed point 0.001cm, in receiver
 uint32_t Data;     // 12-bit raw ADC data in transmitter
 
-SlidePot Sensor(1500,0); // copy calibration from Lab 7
+SlidePot Sensor(1618,215); // copy calibration from Lab 7
 
 // Implement the FIFO class
 //   FIFO2.h is prototype
@@ -199,7 +199,11 @@ void TIMG12_IRQHandler(void){uint32_t pos;
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
     // convert to fixed point distance
     // output 4-frame message
-
+    uint32_t sample = SlidePot.distance(SlidePot.In());
+    IRxmt_OutChar((sample / 1000)+0x30);
+    IRxmt_OutChar(((sample%1000) / 100) + 0x30);
+    IRxmt_OutChar(((sample%100) / 10) + 0x30);
+    IRxmt_OutChar(((sample%10) / 1) + 0x30);
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
   }
 }
