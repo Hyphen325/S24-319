@@ -34,8 +34,10 @@ void Delay(uint32_t time){
     __asm(".syntax unified");
 #endif
     __asm volatile(
-"Delay_Loop: SUBS  R0, R0, #1; \n"
-"            BNE   Delay_Loop; \n"
+"            SUBS  R0, R0, #2; \n"
+"Clock_Loop: SUBS  R0, R0, #4; \n" // C=1 if no overflow
+"            NOP;              \n" // C=0 when R0 passes through 0
+"            BHS   Clock_Loop; \n"
     );
 }
 
