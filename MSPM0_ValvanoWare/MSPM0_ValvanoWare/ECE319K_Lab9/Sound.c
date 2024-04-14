@@ -76,9 +76,13 @@ void SysTick_Handler(void){ // called at 11 kHz
 // special cases: as you wish to implement
 void Sound_Start(const uint16_t *pt, uint32_t count){
 // write this
+    //7256 = load for 11khz interupt
     wave = pt;
     waveSize = count;
     soundEnable = 1;
+    driving = 0;
+    SysTick->LOAD = 7256;//enables it at 11khz
+
   
 }
 
