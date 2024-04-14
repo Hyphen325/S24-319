@@ -1,7 +1,7 @@
 # FIXED
 
 TExaS.o: \
- C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/TExaS.c \
+ C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/TExaS.c \
  C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/msp.h \
  C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/DeviceFamily.h \
  C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/m0p/mspm0g350x.h \
@@ -32,9 +32,9 @@ TExaS.o: \
  C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/peripherals/m0p/hw_debugss.h \
  C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h \
  C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h \
- C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/TExaS.h \
- C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Timer.h \
- C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Clock.h
+ C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/TExaS.h \
+ C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Timer.h \
+ C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Clock.h
 
 C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/msp.h:
 
@@ -96,8 +96,8 @@ C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h:
 
 C:/ti/mspm0_sdk_1_20_01_06/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h:
 
-C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/TExaS.h:
+C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/TExaS.h:
 
-C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Timer.h:
+C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Timer.h:
 
-C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Clock.h:
+C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Clock.h:

@@ -43,7 +43,7 @@ void DAC_Init(void){
   // bit 16 DFM 0 straight binary
   // bit 8 RES 1 12-bit
   // bit 0 ENABLE 1 for on, 0 for disable
-  DAC0->CTL0 = 0x0100; // 12-bit, straight, disable
+  DAC0->CTL0 = 0x0000; // 8-bit, straight, disable
   // CTL1
   // bit 24 OPS 1 OUT0 is selected
   // bit 9 REFSN 0 VR- is VrefN, 1 for analog ground

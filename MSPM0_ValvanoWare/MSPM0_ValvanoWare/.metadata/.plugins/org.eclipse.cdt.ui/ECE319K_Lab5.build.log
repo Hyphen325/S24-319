@@ -3,6 +3,45 @@
 
 "C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
  
-gmake[1]: 'ECE319K_Lab5.out' is up to date.
+Building file: "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/DAC5.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"DAC5.d_raw" -MT"DAC5.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug/syscfg"   -o"DAC5.o" "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/DAC5.c"
+C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/DAC5.c:36:5: warning: implicit declaration of function 'Clock_Delay' is invalid in C99 [-Wimplicit-function-declaration]
+    Clock_Delay(24); // time for ADC and VREF to power up
+    ^
+1 warning generated.
+Finished building: "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/DAC5.c"
+ 
+Building file: "../ECE319K_Lab5main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"ECE319K_Lab5main.d_raw" -MT"ECE319K_Lab5main.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug/syscfg"   -o"ECE319K_Lab5main.o" "../ECE319K_Lab5main.c"
+Finished building: "../ECE319K_Lab5main.c"
+ 
+Building file: "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Key.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Key.d_raw" -MT"Key.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug/syscfg"   -o"Key.o" "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Key.c"
+Finished building: "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Key.c"
+ 
+Building file: "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Song.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -c -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug" -I"C:/ti/mspm0_sdk_1_20_01_06/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_1_20_01_06/source" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc" -D__MSPM0G3507__ -gdwarf-3 -MMD -MP -MF"Song.d_raw" -MT"Song.o" -I"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug/syscfg"   -o"Song.o" "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Song.c"
+Finished building: "C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/Song.c"
+ 
+Building target: "ECE319K_Lab5.out"
+Invoking: Arm Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang.exe" -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O0 -D__MSPM0G3507__ -gdwarf-3 -Wl,-m"ECE319K_Lab5.map" -Wl,--heap_size=512 -Wl,--stack_size=512 -Wl,-i"C:/Users/noah/OneDrive/Documents/319K/MSPM0_ValvanoWare/MSPM0_ValvanoWare/ECE319K_Lab5/Debug/syscfg" -Wl,-i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="ECE319K_Lab5_linkInfo.xml" -Wl,--rom_model -o "ECE319K_Lab5.out" "./Clock.o" "./DAC5.o" "./Dump.o" "./ECE319K_Lab5Grader.o" "./ECE319K_Lab5main.o" "./FIFO.o" "./Key.o" "./LaunchPad.o" "./Song.o" "./Timer.o" "./UART.o" "./UARTints.o" "./ticlang/startup_mspm0g3507_ticlang.o" "../mspm0g3507.cmd"  -Wl,-l"C:/ti/mspm0_sdk_1_20_01_06/source/ti/driverlib/lib/ticlang/m0p/mspm0g1x0x_g3x0x/driverlib.a" -Wl,-llibc.a 
+makefile:150: recipe for target 'ECE319K_Lab5.out' failed
+ 
+ undefined first referenced                                                                                               
+  symbol       in file                                                                                                    
+ --------- ----------------                                                                                               
+ main      C:\ti\ccs1240\ccs\tools\compiler\ti-cgt-armllvm_2.1.3.LTS\lib\armv6m-ti-none-eabi/c/libc.a<boot_cortex_m.c.obj>
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "ECE319K_Lab5.out" not built
+tiarmclang: error: tiarmlnk command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [ECE319K_Lab5.out] Error 1
+gmake: *** [all] Error 2
+makefile:146: recipe for target 'all' failed
 
 **** Build Finished ****

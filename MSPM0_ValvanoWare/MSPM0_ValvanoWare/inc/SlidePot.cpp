@@ -35,11 +35,10 @@ uint32_t SlidePot::In(void){
   // return digital result (0 to 4095)
 	ADC1->ULLMEM.CTL0 |= 0x00000001;             // 1) enable conversions
 	ADC1->ULLMEM.CTL1 |= 0x00000100;             // 2) start ADC
-	uint32_t volatile delay = ADC0->ULLMEM.STATUS; // 3) time to let ADC start
-	while ((ADC0->ULLMEM.STATUS & 0x01) == 0x01) {}    // 4) wait for completion
-	return ADC0->ULLMEM.MEMRES[0];
-  
-  
+	uint32_t volatile delay = ADC1->ULLMEM.STATUS; // 3) time to let ADC start
+	while ((ADC1->ULLMEM.STATUS & 0x01) == 0x01) {}    // 4) wait for completion
+	data = ADC1->ULLMEM.MEMRES[0];
+	return data;
 }
 
 
@@ -48,7 +47,7 @@ uint32_t SlidePot::In(void){
 SlidePot::SlidePot(uint32_t m, uint32_t b){
   // write this, runs on creation
 	slope = m;
-	b = offset;
+	offset = b;
 
 }
 

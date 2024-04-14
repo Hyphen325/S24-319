@@ -50,12 +50,16 @@ void Delay(uint32_t time){
 // if bit=1 no PA8 pulses, 16 times at off for 13.158us, off for 13.158us
 void IRxmt_SendBit(int bit){
   // write this
-    for (int i = 0; i < PulsePerBit; i++) {
-        GPIOA->DOUT31_0 |= (~(bit << 8)) & IR;
-        Delay(1010);
-        GPIOA->DOUT31_0 &= ~IR;
-        Delay(1015);
+    for (int i = 0; i < 16; i++) {
+        if (bit == 0) {
+            GPIOA->DOUT31_0 |= IR;
+        }
+            Delay(1012);
+            GPIOA->DOUT31_0 &= ~IR;
+            Delay(1012);
+        
     }
+    return;
     
 
 }

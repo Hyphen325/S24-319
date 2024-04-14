@@ -7,9 +7,24 @@
 #include <ti/devices/msp/msp.h>
 #include "Sound.h"
 #include "sounds/sounds.h"
-#include "../inc/DAC5.h"
 #include "../inc/Timer.h"
-#include "../inc/DAC.h"
+#include "../inc/DAC5.h"
+
+extern uint32_t velocity;
+
+static uint8_t gear = 0;
+static uint8_t driving = 0;
+static const uint16_t* wave;
+static uint32_t waveSize;
+static const uint32_t gearConst = 800000;//800,000
+
+
+static const uint16_t Sin[32] = {
+16,19,22,24,27,28,30,
+31,31,31,30,28,27,24,
+22,19,16,13,10,8,5,4,
+2,1,1,1,2,4,5,8,10,13
+};
 
 
 void SysTick_IntArm(uint32_t period, uint32_t priority){//What second unit is period
@@ -31,20 +46,22 @@ void Sound_Init(void){
     uint32_t period = 10000000000 / 11000;//converts to nanoseconds
     SysTick->CTRL = 0x00;
     SysTick->LOAD = (period / 125) / 32;//investigate
-    SCB->SHP[1] = (SCB->SHP[1] & (~0xC0000000)) | 1 << 30;//Does Priority happen here?
+    SCB->SHP[1] = (SCB->SHP[1] & (~0xC0000000)) | 1 << 30;
     SysTick->VAL = 0;
+    waveSize = 0;
     SysTick->CTRL = 0x07;
-    DAC_Init();
-    soundIndex = 0;
-  
+    DAC5_Init();
 }
 void SysTick_Handler(void){ // called at 11 kHz
   // output one value to DAC if a sound is active
-    if (!soundEnable) {
-        DAC_Out();
+    static uint32_t i = 0;
+    if (soundEnable) {
+        DAC5_Out(wave[i]*8);
+        i = (i+1)&waveSize;//waveSize is a power of 2
     }
-    
-	
+    if (driving) {
+        SysTick->LOAD = gearConst - (velocity % (gear * 20)) * 800; //800 is scaling constant
+    }
 }
 
 //******* Sound_Start ************
@@ -57,35 +74,27 @@ void SysTick_Handler(void){ // called at 11 kHz
 //        count is the length of the array
 // Output: none
 // special cases: as you wish to implement
-void Sound_Start(const uint8_t *pt, uint32_t count){
+void Sound_Start(const uint16_t *pt, uint32_t count){
 // write this
+    wave = pt;
+    waveSize = count;
+    soundEnable = 1;
   
-}
-void Sound_Shoot(void){
-// write this
-  
-}
-void Sound_Killed(void){
-// write this
-  
-}
-void Sound_Explosion(void){
-// write this
- 
 }
 
-void Sound_Fastinvader1(void){
-  
+void Start_Driving() {
+    waveSize = 32;
+    wave = Sin;
+    driving = 1;
+    soundEnable = 1;
 }
-void Sound_Fastinvader2(void){
-  
+
+void Gear_Shift(uint8_t up, uint8_t down) {
+    gear = gear + up - down;
+    waveSize = 32;
 }
-void Sound_Fastinvader3(void){
-  
+
+void Stop_Driving() {
+    driving = 0;
 }
-void Sound_Fastinvader4(void){
-  
-}
-void Sound_Highpitch(void){
-  
-}
+

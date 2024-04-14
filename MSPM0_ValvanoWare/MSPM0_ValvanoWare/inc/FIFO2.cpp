@@ -20,7 +20,7 @@
 
 #define FIFO2_SIZE 32
 // A class named Queue that defines a FIFO
-int abs(int x) {
+uint32_t abs(int32_t x) {
     if (x < 0) {
         return -1 * x;
     }
@@ -38,7 +38,7 @@ Queue::Queue(){
 
 // To check whether Queue is empty or not
 bool Queue::IsEmpty(void){
-    if ((GetI-PutI) == 0) {
+    if (GetI == PutI) {
         return true;
     }
   return false;  // replace this with solution
@@ -46,7 +46,7 @@ bool Queue::IsEmpty(void){
 
   // To check whether Queue is full or not
 bool Queue::IsFull(void){
-    if (abs(GetI-PutI) == FIFO2_SIZE) {
+    if (abs(PutI-GetI) >= 31) {
         return true;
     }
   return false;  // replace this with solution
@@ -57,7 +57,7 @@ bool Queue::Put(char x){
     if (IsFull()) {
         return false;
     }
-    if (PutI == FIFO2_SIZE) {
+    if (PutI >= 31) {
         PutI = 0;
     }
     else {
@@ -71,11 +71,11 @@ bool Queue::Put(char x){
 
   // Removes an element in Queue from front end. 
 bool Queue::Get(char *pt){
-    if (IsEmpty()) {
+    if (GetI==PutI) {
         return false;
     }
     *pt = Buf[GetI];
-    GetI = (GetI + 1) & FIFO2_SIZE;
+    GetI = (GetI + 1) & ~FIFO2_SIZE;
   return true;  // replace this with solution
 
 }

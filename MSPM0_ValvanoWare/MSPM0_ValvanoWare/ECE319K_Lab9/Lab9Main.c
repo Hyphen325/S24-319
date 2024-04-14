@@ -13,7 +13,7 @@
 #include "../inc/TExaS.h"
 #include "../inc/Timer.h"
 #include "../inc/ADC1.h"
-#include "../inc/DAC5.h"
+#include "../inc/DAC.h"
 #include "SmallFont.h"
 #include "LED.h"
 #include "Switch.h"
@@ -23,6 +23,10 @@
 // the data sheet says the ADC does not work when clock is 80 MHz
 // however, the ADC seems to work on my boards at 80 MHz
 // I suggest you try 80MHz, but if it doesn't work, switch to 40MHz
+
+//velocity variable
+uint32_t velocity = 0;
+
 void PLL_Init(void){ // set phase lock loop (PLL)
   // Clock_Init40MHz(); // run this line for 40MHz
   Clock_Init80MHz(0);   // run this line for 80MHz
@@ -78,7 +82,7 @@ const char *Phrases[3][4]={
   {Language_English,Language_Spanish,Language_Portuguese,Language_French}
 };
 // use main1 to observe special characters
-int main(void){ // main1
+int main1(void){ // main1
     char l;
   __disable_irq();
   PLL_Init(); // set bus speed
@@ -162,7 +166,7 @@ int main3(void){ // main3
   }
 }
 // use main4 to test sound outputs
-int main4(void){ uint32_t last=0,now;
+int main(void){ uint32_t last=0,now;
   __disable_irq();
   PLL_Init(); // set bus speed
   LaunchPad_Init();
@@ -173,17 +177,19 @@ int main4(void){ uint32_t last=0,now;
   __enable_irq();
   while(1){
     now = Switch_In(); // one of your buttons
-    if((last == 0)&&(now == 1)){
-      Sound_Shoot(); // call one of your sounds
+    if((last == 0)&&(now == (1<<16))){
+       // call one of your sounds
+        Start_Driving();
     }
-    if((last == 0)&&(now == 2)){
-      Sound_Killed(); // call one of your sounds
+    if((last == 0)&&(now == (1<<17))){
+       // call one of your sounds
+        Stop_Driving();
     }
     if((last == 0)&&(now == 4)){
-      Sound_Explosion(); // call one of your sounds
+       // call one of your sounds
     }
     if((last == 0)&&(now == 8)){
-      Sound_Fastinvader1(); // call one of your sounds
+       // call one of your sounds
     }
     // modify this to test all your sounds
   }

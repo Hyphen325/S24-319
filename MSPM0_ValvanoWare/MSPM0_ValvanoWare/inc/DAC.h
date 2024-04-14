@@ -43,7 +43,7 @@ void DAC_Init(void);
  
  
 /**
- * Output to 12-bit DAC, 0 to 2.5V range
+ * Output to 8-bit DAC, 0 to 2.5V range
  * @param data is 12-bit data
  * @return none 
  * @see DAC_Init()

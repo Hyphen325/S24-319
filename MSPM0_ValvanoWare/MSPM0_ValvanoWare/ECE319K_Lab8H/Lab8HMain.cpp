@@ -122,7 +122,7 @@ int main2T(void){ // main2T
 //   run main3R on receiver
 //   verify pulses on transmitter convert to UART protocol on sensor output, receiver PA22
 //   verify waveforms similar to Figure 8.9
-int main(void){ // main3T
+int main3T(void){ // main3T
   __disable_irq();
   PLL_Init();     // set system clock to 80 MHz
   LaunchPad_Init();
@@ -140,6 +140,7 @@ int main3R(void){ // main3R
   ST7735_InitPrintf();
   UART2_Init(); // just receive, PA22, receiver timeout interrupt synchronization
   __enable_irq();       // interrupts for UART2
+  err = 0;
   while(1){ // receive a single character
     data1 = UART2_InChar(); // should make main3T
     ST7735_OutChar(data1);
@@ -173,6 +174,7 @@ int main4R(void){ // main4R
   UART2_Init();   // just receive, PA22, receiver timeout interrupt synchronization
   __enable_irq(); // interrupts for UART2
   while(1){ // message is 1.234 cm
+
     data1 = UART2_InChar(); // should be B1
     ST7735_OutChar(data1&0x7F);
     ST7735_OutChar('.');    // implied
@@ -183,6 +185,7 @@ int main4R(void){ // main4R
     data4 = UART2_InChar(); // should be 34
     ST7735_OutChar(data4);
     ST7735_OutChar('\n');
+    
   }
 }
 
@@ -200,10 +203,10 @@ void TIMG12_IRQHandler(void){uint32_t pos;
     // convert to fixed point distance
     // output 4-frame message
     uint32_t sample = Sensor.Convert(Sensor.In());
-    IRxmt_OutChar((sample / 1000)+0x30);
-    IRxmt_OutChar(((sample%1000) / 100) + 0x30);
-    IRxmt_OutChar(((sample%100) / 10) + 0x30);
-    IRxmt_OutChar(((sample%10) / 1) + 0x30);
+    IRxmt_OutChar((sample / 1000)|0x30 |0x80);
+    IRxmt_OutChar(((sample%1000) / 100) | 0x30);
+    IRxmt_OutChar(((sample%100) / 10) | 0x30);
+    IRxmt_OutChar(((sample%10) / 1) | 0x30);
     GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
   }
 }
@@ -214,7 +217,7 @@ void TIMG12_IRQHandler(void){uint32_t pos;
 // Data should go from 0 to 4095 in transmitter
 // Position should go from 0 to 2000 in receiver
 // LCD should show 0.000cm to 2.000 cm
-int main5T(void){ // main5T
+int main(void){ // main5T
   __disable_irq();
   PLL_Init(); // set bus speed
   LaunchPad_Init();
@@ -244,7 +247,7 @@ int main5R(void){ // main5R
     // incremenet ReceiveCount
     ST7735_SetCursor(0, 0);
     char InChar = 0;
-    while (InChar == 0) { InChar = UART2_InChar(); }
+    while (InChar == 0) { InChar = UART2_InChar()&0x7F; }
     ReceiveCount++;
     GPIOB->DOUTTGL31_0 = RED; // toggle PB26 (minimally intrusive debugging)
     // receive next three bytes of message
@@ -253,8 +256,12 @@ int main5R(void){ // main5R
     char byte1 = UART2_InChar();
     char byte2 = UART2_InChar();
     char byte3 = UART2_InChar();
-    char message[] = {InChar, byte1, byte2, byte3};
-    printf("%.4s", message);
+    ST7735_OutChar(InChar);
+    ST7735_OutChar('.');
+    ST7735_OutChar(byte1);
+    ST7735_OutChar(byte2);
+    ST7735_OutChar(byte3);
+    Position = ((InChar & 0xF) * 1000) + ((byte1 & 0xF) * 100) + ((byte2 & 0xF) * 10) + (byte3 & 0xF);
     if((ReceiveCount%15)==0){
       ST7735_PlotPoint(Position);
       ST7735_PlotNextErase(); // data plotted at about 2 Hz

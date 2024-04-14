@@ -141,10 +141,10 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-ECE319K_Lab9.out \
+ECE319K_Lab9.out 
 
 EXE_OUTPUTS__QUOTED += \
-"ECE319K_Lab9.out" \
+"ECE319K_Lab9.out" 
 
 
 # All Target

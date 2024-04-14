@@ -53,7 +53,7 @@ void myFifo_Init(uint32_t size);
 uint32_t myFifo_Put(char data);
 char myFifo_Get(void);
 uint32_t FifoError;
-int main(void){ // use main1 to test your FIFO1
+int main1(void){ // use main1 to test your FIFO1
   char me,you;
   char data;
   __disable_irq();

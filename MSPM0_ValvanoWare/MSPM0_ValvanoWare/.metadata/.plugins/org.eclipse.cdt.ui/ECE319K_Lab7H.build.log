@@ -3,6 +3,7 @@
 
 "C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
  
-gmake[1]: 'ECE319K_Lab7H.out' is up to date.
+gmake: *** No rule to make target 'C:/Users/noah/Downloads/MSPM0_ValvanoWare/MSPM0_ValvanoWare/inc/SlidePot.cpp', needed by 'SlidePot.o'.
+gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****
